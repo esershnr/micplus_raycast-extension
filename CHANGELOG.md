@@ -1,9 +1,8 @@
 # MicPlus Changelog
 
-## [Initial Version] - {PR_MERGE_DATE}
+## [Initial Release] - {PR_MERGE_DATE}
 
-- Add `Toggle Microphone` command
-- Add `Mute Microphone` command
-- Add `Unmute Microphone` command
-- Add `Check NirCmd Status` command for diagnostics
-- Support for system PATH or custom path for NirCmd
+- Added `Toggle Microphone` command
+- Added `Mute Microphone` command
+- Added `Unmute Microphone` command
+- Added `Check NirCmd Status` command

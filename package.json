@@ -3,7 +3,7 @@
   "name": "micplus",
   "title": "MicPlus",
   "description": "Control your microphone's state",
-  "icon": "micplus_icon.png",
+  "icon": "assets/micplus_icon.png",
   "license": "MIT",
   "commands": [
     {

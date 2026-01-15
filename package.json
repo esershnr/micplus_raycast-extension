@@ -7,6 +7,13 @@
   "license": "MIT",
   "commands": [
     {
+      "name": "check-setup",
+      "title": "Check NirCmd Status",
+      "description": "Verifies if NirCmd is correctly installed or configured",
+      "mode": "no-view",
+      "subtitle": "Diagnostics"
+    },
+    {
       "name": "toggle-mic",
       "title": "Toggle Microphone",
       "description": "Toggles your microphone's state",
@@ -40,19 +47,29 @@
     "prettier": "^3.5.3",
     "typescript": "^5.8.2"
   },
-  "scripts": {
-    "dev": "ray develop",
-    "lint": "ray lint",
-    "fix-lint": "ray lint --fix",
-    "build": "ray build",
-    "publish": "npx @raycast/api@latest publish",
-    "prepublishOnly": "echo \"\\n\\nIt seems like you are trying to publish the Raycast extension to npm.\\n\\nIf you did intend to publish it to npm, remove the \\`prepublishOnly\\` script and rerun \\`npm publish\\` again.\\nIf you wanted to publish it to the Raycast Store instead, use \\`npm run publish\\` instead.\\n\\n\" && exit 1"
-  },
-  "author": "Zesha",
-  "platforms": [
-    "Windows"
-  ],
-  "categories": [
+      "scripts": {
+        "dev": "ray develop",
+        "lint": "ray lint",
+        "fix-lint": "ray lint --fix",
+        "build": "ray build",
+        "publish": "npx @raycast/api@latest publish",
+        "prepublishOnly": "echo \"\\n\\nIt seems like you are trying to publish the Raycast extension to npm.\\n\\nIf you did intend to publish it to npm, remove the \\`prepublishOnly\\` script and rerun \\`npm publish\\` again.\\nIf you wanted to publish it to the Raycast Store instead, use \\`npm run publish\\` instead.\\n\\n\" && exit 1"
+      },
+      "author": "Zesha",
+      "platforms": [
+        "Windows"
+      ],
+      "categories": [
     "System"
+  ],
+  "preferences": [
+    {
+      "name": "nircmdPath",
+      "type": "file",
+      "required": false,
+      "title": "NirCmd Executable Path",
+      "description": "Optional. Leave empty if 'nircmd' is already in your system PATH.",
+      "label": "Custom Path (Optional)"
+    }
   ]
 }
